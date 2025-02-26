@@ -36,7 +36,7 @@ gem "google-cloud-storage"
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin Ajax possible
 # gem "rack-cors"
 # ユーザー認証ライブラリの追加
-gem "ruby-openai", "~> 7.3.1"
+gem "ruby-openai", "~> 7.4.0"
 gem "devise"
 
 group :development, :test do
