@@ -3,6 +3,7 @@ require "json"
 require "net/http"
 
 redis = Redis.new(url: ENV["REDIS_URL"] || "redis://redis:6379/1")
+return if ENV["DISABLE_REDIS"] == "true"
 
 uri = URI("https://www.googleapis.com/robot/v1/metadata/x509/securetoken@system.gserviceaccount.com")
 response = Net::HTTP.get(uri)
